@@ -1,0 +1,94 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* background-image: url(https://i.pinimg.com/originals/40/5e/d2/405ed24d3766cebed3eb8ad10a74a753.gif); */
+  /* background-image: url(https://i.pinimg.com/originals/b6/e6/0c/b6e60c232eea473eb8bce612ed569cd3.gif); */
+}
+
+#Head {
+  display: flex;
+  justify-content: center;
+}
+
+.header-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 15%;
+  display: block;
+}
+
+.headline {
+  width: fit-content;
+  border: 25px solid #b88846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+  margin-left: 40%;
+  color: darkorange;
+}
+
+.image-container {
+  border-radius: 5px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/12/03/20/31/background-2995826_960_720.png);
+  padding: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: darkorange;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-highlight {
+  padding-left: 55px;
+  color: rgb(72, 72, 70);
+  font-size: 40px;
+}
+
+.text-container {
+  background-color: rgb(222, 222, 222);
+  padding: 16px;
+  color: rgb(72, 72, 70);
+  font-weight: 700;
+  text-align: center;
+}
+
+.iframes-right {
+  height: 80%;
+  width: 30%;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
+
+.iframe-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.maps-frame {
+  border: 0;
+  height: 350px;
+  width: 70%;
+}
+
+.footer {
+  padding: 8px;
+  color: darkorange;
+}
+
+.footer-text {
+  margin-right: 16px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Quotes</title>
+
+  <!-- INTERN CSS: -->
+  <style>
+    body {
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: black;
+    }
+
+    #Head {
+      /* border: 5px solid red; */
+      display: flex;
+      justify-content: center;
+    }
+
+    .headline {
+      border: 25px solid #b88846;
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+      width: fit-content;
+      margin: 10px auto;
+      padding: 50px;
+      color: darkorange;
+    }
+
+    .text-highlight {
+      color: rgb(72, 72, 70);
+      font-size: 47px;
+    }
+
+    .img-Container {
+      background-color: rgb(61, 58, 58);
+      border: 25px solid #b88846;
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .footer {
+      padding: 8px;
+      color: darkorange;
+    }
+
+    .footer-text {
+      margin-right: 16px;
+    }
+
+    .color {
+      color: darkorange;
+      text-decoration: none;
+    }
+
+    .color:hover {
+      text-decoration: underline;
+    }
+
+    /* Style button */
+    .btn {
+      background-color: black;
+      /* black background */
+      border: 25px solid #b88846;
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+      /* Remove borders */
+      color: darkorange;
+      /* White text */
+      padding: 12px 16px;
+      /* Some padding */
+      font-size: 16px;
+      /* Set a font size */
+      cursor: pointer;
+      /* Mouse pointer on hover */
+      margin-top: 60%;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      color: rgb(252, 191, 118);
+      background-color: rgb(61, 58, 58);
+    }
+
+    .gif {
+      border: 25px solid #b88846;
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1 class="headline">
+      <span id="Head">__________Greetings!__________</span> <br />
+      <span class="text-highlight">
+        One Piece speeches from Luffys Crewmates</span>
+    </h1>
+  </div>
+
+
+
+  <div class="gif">
+    <div>
+      <img src="https://c.tenor.com/vccXXc0J96IAAAAC/wano-luffy-wano.gif" alt="Luffy">
+    </div>
+
+    <div>
+      <a href="./index.html"><button class="btn"><i class="fa fa-home"></i> Home</button>
+      </a>
+    </div>
+
+    <div>
+      <img src="https://i.pinimg.com/originals/94/14/59/941459a4d50222257145dcca56300137.gif" alt="Luffy 2">
+    </div>
+  </div>
+
+  <div class="img-Container">
+    <img src="./IMG/OnePiece.jpg" alt="Some lifechanging Quotes" />
+  </div>
+
+  <div class="footer">
+    <span class="footer-text">All rights reserved, bla bla Joke</span> |
+    <a class="color" href="#">Impressum</a> |
+    <a class="color" href="#">Datenschutz</a>
+  </div>
+</body>
+
+</html>
